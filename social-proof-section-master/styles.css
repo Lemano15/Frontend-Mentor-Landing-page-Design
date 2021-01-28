@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+TYPOGRAPHY
+*/
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+.title-Main, .subtitle-Main, .ratingCaption {
+    color: hsl(300, 43%, 22%);
+}
+
+.title-Main, .ratingCaption, .buyerName {
+    font-weight: 700;
+}
+
+.buyerName, .writtenReview {
+    color: hsl(0, 0%, 100%);
+}
+
+.ratingContainer {
+    background-color: hsl(300, 24%, 96%);
+}
+
+.reviewCardContainer {
+    background-color: hsl(300, 43%, 22%);
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+}
+
+.writtenReview {
+    font-weight: 500;
+}
+
+/* 
+SPACING & FORMATTING
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#mastHead {
+    text-align: center;
+    padding: 1em 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.title-Main {
+    font-size: 2rem;
+    margin: .5em 2em;
+}
+
+.subtitle-Main {
+    padding: 0 .8em;
+    line-height: 25px;
+}
+
+#starRatings {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 600px;
+}
+
+.ratingContainer {
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 10px;
+}
+
+.star {
+    margin: 0 .1em;
+}
+
+.ratingCaption {
+    margin-top: .5em;
+}
+
+#customerReviews {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1.5em;
+}
+
+.reviewCardContainer {
+    margin: 1em auto;
+    padding: 2em 3em;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.credentials {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.buyerImg {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.nameVerification {
+    font-size: .8rem;
+    margin-left: 2em;
+}
+
+.buyerName {
+    margin-bottom: .5em;
+}
+
+.writtenReview {
+    font-size: .8rem;
+    line-height: 25px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  @media (min-width: 1280px) {
+      body {
+          flex-flow: row wrap;
+          margin: 5em;
+          justify-content: space-between;
+      }
+
+      #mastHead {
+          margin: 0 0 0 .5em;
+          text-align: left;
+      }
+
+      .title-Main {
+          font-size: 2.5rem;
+          text-align: left;
+          margin-left: 0;
+          line-height: 47px;
+          margin-bottom: .3em;
+      }
+
+      .subtitle-Main {
+          margin-top: 0;
+          padding-left: 0;
+      }
+
+      #starRatings {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .ratingContainer {
+          display: flex;
+          padding: 1em;
+          margin: .5em 0;
+      }
+
+      .firstRating {
+          align-self: flex-start;
+      }
+
+      .secondRating {
+          align-self: center;
+      }
+
+      .thirdRating {
+          align-self: flex-end;
+      }
+
+      .ratingCaption {
+          margin: 0 0 0 2em;
+      }
+
+      #customerReviews {
+          flex-direction: row;
+          margin: 3em 0 0 0;
+          height: 45vh;
+      }
+
+      .reviewCardContainer {
+          margin: 1em;
+          padding: 2em;
+          max-height: 25vh;
+      }
+
+      .firstReview {
+          align-self: flex-start;
+      }
+
+      .secondReview {
+          align-self: center;
+      }
+
+      .thirdReview {
+          align-self: flex-end;
+      }
+  }
